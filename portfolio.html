@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <!-- Шапка сайта -->
+    <header>
+        <nav class="header-container">
+            <a href="./index.html" class="logo">
+                Web <span class="logo-header">Studio</span>
+            </a>
+
+            <ul class="nav-links">
+                <li class="item"><a href="">Студия</a></li>
+                <li class="item"><a href="./portfolio.html" target="_blank">Портфолио</a></li>
+                <li class="item"><a href="">Контакты</a></li>
+            </ul>
+
+            <!-- позже используем встроенные svg файлы -->
+            <ul class="nav-contacts">
+                <li class="item"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                <li class="item"><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!--Примеры работ-->
+        <section class="examples">
+            <!--скроем <h1>Примеры работ</h1> в css позже-->
+            <!--радио кнопки дооформляются в следующем дз, пока разрешили ссылками сделать-->
+            <div class="radio-button">
+                <a class="portfolio item" href="/">Все</a>
+                <a class="websites item" href="/">Веб-сайты</a>
+                <a class="applications item" href="/">Приложения</a>
+                <a class="design item" href="/">Дизайн</a>
+                <a class="marketing item" href="/">Маркетинг</a>
+            </div>
+
+            <ul class="examples-list">
+                <!--возможно ссылкой будет вся li в дальнейшем-->
+                <li class="item">
+                    <a href="/">
+                        <img src="./images/techno.jpg" alt="Компьютер с примером работы" width="370" height="294" />
+                    </a>
+                    <h2>Технокряк</h2>
+                    <p>Веб-сайт</p>
+                    <p class="popup-text">Технокряк это современная площадка распространения коронавируса. Компании
+                        используют эту
+                        платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.
+                    </p>
+                </li>
+
+                <li class="item">
+                    <a href="/">
+                        <img src="./images/design.jpg" alt="Два баскетболиста" width="370" height="294" />
+                    </a>
+                    <h2>Постер <span lang="en">New Orlean vs Golden Star</span></h2>
+                    <p>Дизайн</p>
+                    <p class="popup-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut
+                        labore et dolore magna aliqua.
+                    </p>
+                </li>
+
+                <li class="item">
+                    <a href="/">
+                        <img src="./images/restaurant-logo.jpg" alt="Лого ресторана" width="370" height="294" />
+                    </a>
+                    <h2>Ресторан <span lang="en">Seafood</span></h2>
+                    <p>Приложение</p>
+                    <p class="popup-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut
+                        labore et dolore magna aliqua.
+                    </p>
+                </li>
+
+                <li class="item">
+                    <a href="/">
+                        <img src="./images/headphones.jpg" alt="Наушники" width="370" height="294" />
+                    </a>
+                    <h2>Проект <span lang="en">Prime</span></h2>
+                    <p>Маркетинг</p>
+                    <p class="popup-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut
+                        labore et dolore magna aliqua.
+                    </p>
+                </li>
+
+                <li class="item">
+                    <a href="/">
+                        <img src="./images/boxes.jpg" alt="Две коробки" width="370" height="294" />
+                    </a>
+                    <h2>Проект <span lang="en">Boxes</span></h2>
+                    <p>Приложение</p>
+                    <p class="popup-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut
+                        labore et dolore magna aliqua.
+                    </p>
+                </li>
+
+                <li class="item">
+                    <a href="/">
+                        <img src="./images/computer.jpg" alt="Компьютер" width="370" height="294" />
+                    </a>
+                    <h2 lang="en">Inspiration has no Borders</h2>
+                    <p>Веб-сайт</p>
+                    <p class="popup-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut
+                        labore et dolore magna aliqua.
+                    </p>
+                </li>
+
+                <li class="item">
+                    <a href="/">
+                        <img src="./images/journal.jpg" alt="Журнал" width="370" height="294" />
+                    </a>
+                    <h2>Издание <span lang="en">Limited Edition</span></h2>
+                    <p>Дизайн</p>
+                    <p class="popup-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut
+                        labore et dolore magna aliqua.
+                    </p>
+                </li>
+
+                <li class="item">
+                    <a href="/">
+                        <img src="./images/lab.jpg" alt="Ярлык" width="370" height="294" />
+                    </a>
+                    <h2>Проект <span lang="en">LAB</span></h2>
+                    <p>Маркетинг</p>
+                    <p class="popup-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut
+                        labore et dolore magna aliqua.
+                    </p>
+                </li>
+
+                <li class="item">
+                    <a href="/">
+                        <img src="./images/laptop-site.jpg" alt="Лаптоп с вебстраницей" width="370" height="294" />
+                    </a>
+                    <h2 lang="en">Growing Business</h2>
+                    <p>Приложение</p>
+                    <p class="popup-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut
+                        labore et dolore magna aliqua.
+                    </p>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="address">
+                <a href="/" class="logo">
+                    Web <span class="logo-footer">Studio</span>
+                </a>
+                <div class="footer-contacts">
+                    <address class="adress-block">
+                        г. Киев, пр-т Леси Украинки, 26
+                    </address>
+
+                    <a class="mail-block" href="mailto:info@example.com">info@example.com</a>
+                    <a href="tel:++380991111111">+38 099 111 11 11</a>
+                </div>
+            </div>
+
+            <div class="join-list">
+                <p>Присоединяйтесь</p>
+                <ul>
+                    <li>
+                        <a href="/" class="social-link"><span class="vissually-hidden">Instagram</span></a>
+                    </li>
+                    <li>
+                        <a href="/" class="social-link"><span class="vissually-hidden">Twitter</span></a>
+                    </li>
+                    <li>
+                        <a href="/" class="social-link"><span class="vissually-hidden">Facebook</span></a>
+                    </li>
+                    <li>
+                        <a href="/" class="social-link"><span class="vissually-hidden">Linkedin</span></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="mail-out">
+                <p>Подпишитесь на рассылку</p>
+                <!--позже вставим email-input; button-->
+            </div>
+        </div>
+
+        <p class="page-authors">2020 | Developed by GoIT Students</p>
+    </footer>
+</body>
+
+</html>
