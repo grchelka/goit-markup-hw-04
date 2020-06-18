@@ -81,7 +81,7 @@ a.logo {
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
-    
+   
     color: inherit;   
 }
 
@@ -112,14 +112,19 @@ a.logo {
 }
 
 /*Герой/Jumbotron*/
-.jumbotron {
+.jumbotron-wrapper {
+    max-width: 1600px;
     height: 600px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 200px 0;
-
-    color: var(--white-textcolor);
-    /*задаю background чтобы проверить применение цвета к h1 и а*/
-    background-color: rgba(47, 48, 58, 0.8);
-    letter-spacing: 0.06em;
+    background-image: linear-gradient(to right,rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), 
+    url('../images/header.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color:rgba(47, 48, 58, 0.8);
+    /*запасной вариант, если картинка не загрузится*/
 }
 
 .jumbotron-title {
@@ -131,6 +136,8 @@ a.logo {
     line-height: 1.36;
     text-align: center;
     text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--white-textcolor);
 }
 
 .jumbotron-button { 
@@ -156,7 +163,7 @@ background-color: #188ce8;
     color: var(--white-textcolor);
 }
 
-/* Преимущества!!!!!!!!!!! */
+/* Преимущества*/
 
 .advantages-list {
     display: flex;
