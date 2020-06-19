@@ -100,14 +100,14 @@ a.logo {
     margin-left: auto;
 }
 
-.nav-links .item:not(:last-child) {
+.nav-links .item-link:not(:last-child) {
     margin-right: 50px;
 }
 /* .nav-links .item + .item {
     margin-left: 50px;
 }*/
 
-.nav-contacts .item:not(:last-child) {
+.nav-contacts .item-link:not(:last-child) {
     margin-right: 50px;
 }
 
@@ -206,52 +206,31 @@ background-color: #188ce8;
     text-align: center;
 }
 
-.item-details::before {
+.advantages-list .item::before {
     display: block; 
     content: "";
     height: 120px;
     border-radius: 4px;
     background: var(--secondary-backgroundcolor);
-    background-image: url(../images/antenna.png);
     background-repeat: no-repeat;
     background-size: auto;
     background-position: center;
 }
 
-.item-punctuality::before {
-    display: block; 
-    content: "";
-    height: 120px;
-    border-radius: 4px;
-    background: var(--secondary-backgroundcolor);
+.advantages-list .item-details::before {
+    background-image: url(../images/antenna.png);
+}
+
+.advantages-list .item-punctuality::before {
     background-image: url(../images/clock.png);
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-position: center; 
 }
 
-.item-planning::before {
-    display: block; 
-    content: "";
-    height: 120px;
-    border-radius: 4px;
-    background: var(--secondary-backgroundcolor);
+.advantages-list .item-planning::before {
     background-image: url(../images/diagram.png);
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-position: center; 
 }
 
-.item-moderntech::before {
-    display: block; 
-    content: "";
-    height: 120px;
-    border-radius: 4px;
-    background: var(--secondary-backgroundcolor);
+.advantages-list .item-moderntech::before {
     background-image: url(../images/astronaut.png);
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-position: center; 
 }
 
 /* Набор услуг */
@@ -306,6 +285,8 @@ background-color: #188ce8;
     padding-top: 94px;
     padding-bottom: 94px;
     height: 702px;
+
+    background-color: var(--secondary-backgroundcolor);
 }
 
 .team-title {
@@ -324,17 +305,13 @@ background-color: #188ce8;
     text-align: center;
 }
 
-.team-list .item {
+.item {
     width: calc((100% - 90px) / 4);
     margin-right: 30px;
 }
 
-.team-list .item:nth-child(4n) {
+.team-list .profile-card:nth-child(4n) {
     margin-right: 0px;
-}
-
-.team {
-    background-color: var(--secondary-backgroundcolor);
 }
 
 .team-list h3 {
@@ -362,6 +339,16 @@ background-color: #188ce8;
 /* позже используем встроенные svg файлы со стилями */
 .social-link {
     color:#AFB1B8;
+}
+
+.profile-card {
+    margin-top: 0;
+    width: 270px;
+    height: 422px;
+    
+    border: 1px solid #F5F4FA;;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+    border-radius: 0px 0px 4px 4px;
 }
 
 /* Клиенты */
@@ -433,6 +420,43 @@ background-color: #188ce8;
     margin-right: 94px;
 }
 
+.social-net {
+    display: flex;
+}
+
+.social-net .social-link {
+    display: block;
+    margin-right: 10px;
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.social-net .instagram {
+    background-image: url(../images/instagram.png);
+}
+
+.social-net .twitter {
+    background-image: url(../images/twitter.png);
+}
+
+.social-net .facebook {
+    background-image: url(../images/facebook.png);
+}
+
+.social-net .linkedin {
+    background-image: url(../images/linkedin.png);
+}
+
+.social-net .social-link:hover,
+.social-net .social-link:focus {
+    background-color: var(--accent-color);
+}
+
 .logo-footer {
     color: var(--white-textcolor);
 }
@@ -453,6 +477,9 @@ background-color: #188ce8;
 .footer-contacts a:focus {
     color: var( --accent-color);
 }
+
+
+
 /* позже вставим email-input; button */
 .footer p {
     font-weight: 700;
