@@ -285,7 +285,6 @@ background-color: #188ce8;
     padding-top: 94px;
     padding-bottom: 94px;
     height: 702px;
-
     background-color: var(--secondary-backgroundcolor);
 }
 
@@ -332,9 +331,6 @@ background-color: #188ce8;
     color: var(--grey-textcolor);
 }
 
-
-
-/* позже используем встроенные svg файлы со стилями */
 .profile-card {
     margin-top: 0;
     width: 270px;
