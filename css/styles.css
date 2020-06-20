@@ -332,15 +332,9 @@ background-color: #188ce8;
     color: var(--grey-textcolor);
 }
 
-.social-items {
-    margin-top: 16px;
-}
+
 
 /* позже используем встроенные svg файлы со стилями */
-.social-link {
-    color:#AFB1B8;
-}
-
 .profile-card {
     margin-top: 0;
     width: 270px;
@@ -353,23 +347,39 @@ background-color: #188ce8;
     background-color: #FFFFFF;
 }
 
-.personal-net {
+.social-items {
     display: flex;
-    margin-left: 32px;
-    margin-right: 32px;
+    justify-content: center;
+    margin-top: 16px;
+    margin-bottom: 24px;
 }
 
 
+.social-items a { 
+    display: block;
+    height: 44px;
+    width: 44px;
+    color: #AFB1B8;
+}
 
-.personal-net .social-link:hover,
-.personal-net .social-link:focus {
+.social-items a:last-child {
+    margin-right: 0;
+}
+
+.social-link .icon {
+    height: 20px;
+    width: 20px;
+    margin-top: 12px;
+    fill: currentColor;
+}
+
+.social-items a:hover,
+.social-items a:focus {
     background-color: var(--accent-color);
-    /*background-image: url(../images/instagram.png);
-    background-image: url(../images/twitter.png);
-    background-image: url(../images/facebook.png);
-    background-image: url(../images/linkedin.png);*/
-
+    border-radius: 50%;
+    color: #FFFFFF;
 }
+
 /* Клиенты */
 /* позже используем встроенные svg файлы со стилями */
 .clients {
