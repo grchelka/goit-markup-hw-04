@@ -364,7 +364,6 @@ background-color: #188ce8;
     margin-bottom: 24px;
 }
 
-
 .social-items a { 
     display: block;
     height: 44px;
@@ -408,8 +407,7 @@ background-color: #188ce8;
 }
 
 .clients-list {
-    display: flex;
-    
+    display: flex; 
 }
 
 .clients-list a {
@@ -428,6 +426,7 @@ background-color: #188ce8;
     border: 1px solid var(--accent-color);
     color: var(--accent-color);
 }
+
 .clients-list a:last-child {
     margin-right: 0;
 }
@@ -547,8 +546,6 @@ background-color: #188ce8;
     color: var( --accent-color);
 }
 
-
-
 /* позже вставим email-input; button */
 .footer p {
     font-weight: 700;
@@ -631,6 +628,7 @@ background-color: #188ce8;
 
 .radio-button a:hover,
 .radio-button a:focus {
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 3px 1px rgba(0, 0, 0, 0.1);
     color: var(--white-textcolor);
     background-color: var(--accent-color);
 }
@@ -662,13 +660,16 @@ background-color: #188ce8;
 }
 
 .examples-list h2 {
+    margin-left: 24px;
     font-weight: bold;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+    color: var(--main-textcolor);
 }
 
 .examples-list p {
+    margin-left: 24px;
     font-size: 16px;
     line-height: 1.9;
     color: var(--grey-textcolor);
@@ -680,4 +681,15 @@ background-color: #188ce8;
     color: var(--white-textcolor);
     /* background будет работать иначе при поключении интерактивности, ставлю, чтобы видно было p */
     background-color: var(--accent-color);
+}
+
+.item-card {
+    display: block;
+    
+}
+
+.item-card:hover,
+.item-card:focus {
+    border: 1px solid #EEEEEE;
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
 }

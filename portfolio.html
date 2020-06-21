@@ -26,11 +26,18 @@
                 <li class="item-link"><a href="/">Контакты</a></li>
             </ul>
 
-            <!-- позже используем встроенные svg файлы -->
-            <ul class="nav-contacts">
-                <li class="item-link"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li class="item-link"><a href="tel:+380961111111">+38 096 111 11 11</a></li>
-            </ul>
+            <div class="nav-contacts">
+                <a href="mailto:info@devstudio.com">
+                    <svg class="email" width="16" height="11">
+                        <use href="./images/header-defs.svg#icon-envelope"></use>
+                    </svg>
+                    info@devstudio.com</a>
+                <a href="tel:+380961111111">
+                    <svg class="phone" width="10" height="15">
+                        <use href="./images/header-defs.svg#icon-phone"></use>
+                    </svg>
+                    +38 096 111 11 11</a>
+            </div>
         </nav>
     </header>
 
@@ -50,11 +57,11 @@
             <ul class="examples-list">
                 <!--возможно ссылкой будет вся li в дальнейшем-->
                 <li class="item">
-                    <a href="/">
-                        <img src="./images/techno.jpg" alt="Компьютер с примером работы" width="370" height="294" />
+                    <a class="item-card" href="/">
+                        <img src="./images/techno.jpg" alt="Компьютер с примером работы" width="379" height="294" />
+                        <h2>Технокряк</h2>
+                        <p>Веб-сайт</p>
                     </a>
-                    <h2>Технокряк</h2>
-                    <p>Веб-сайт</p>
                     <p class="popup-text">Технокряк это современная площадка распространения коронавируса. Компании
                         используют эту
                         платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.
@@ -62,11 +69,11 @@
                 </li>
 
                 <li class="item">
-                    <a href="/">
-                        <img src="./images/design.jpg" alt="Два баскетболиста" width="370" height="294" />
+                    <a class="item-card" href="/">
+                        <img src="./images/design.jpg" alt="Два баскетболиста" width="379" height="294" />
+                        <h2>Постер <span lang="en">New Orlean vs Golden Star</span></h2>
+                        <p>Дизайн</p>
                     </a>
-                    <h2>Постер <span lang="en">New Orlean vs Golden Star</span></h2>
-                    <p>Дизайн</p>
                     <p class="popup-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                         incididunt ut
                         labore et dolore magna aliqua.
@@ -74,11 +81,11 @@
                 </li>
 
                 <li class="item">
-                    <a href="/">
-                        <img src="./images/restaurant-logo.jpg" alt="Лого ресторана" width="370" height="294" />
+                    <a class="item-card" href="/">
+                        <img src="./images/restaurant-logo.jpg" alt="Лого ресторана" width="379" height="294" />
+                        <h2>Ресторан <span lang="en">Seafood</span></h2>
+                        <p>Приложение</p>
                     </a>
-                    <h2>Ресторан <span lang="en">Seafood</span></h2>
-                    <p>Приложение</p>
                     <p class="popup-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                         incididunt ut
                         labore et dolore magna aliqua.
@@ -86,11 +93,11 @@
                 </li>
 
                 <li class="item">
-                    <a href="/">
-                        <img src="./images/headphones.jpg" alt="Наушники" width="370" height="294" />
+                    <a class="item-card" href="/">
+                        <img src="./images/headphones.jpg" alt="Наушники" width="379" height="294" />
+                        <h2>Проект <span lang="en">Prime</span></h2>
+                        <p>Маркетинг</p>
                     </a>
-                    <h2>Проект <span lang="en">Prime</span></h2>
-                    <p>Маркетинг</p>
                     <p class="popup-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                         incididunt ut
                         labore et dolore magna aliqua.
@@ -98,11 +105,11 @@
                 </li>
 
                 <li class="item">
-                    <a href="/">
-                        <img src="./images/boxes.jpg" alt="Две коробки" width="370" height="294" />
+                    <a class="item-card" href="/">
+                        <img src="./images/boxes.jpg" alt="Две коробки" width="379" height="294" />
+                        <h2>Проект <span lang="en">Boxes</span></h2>
+                        <p>Приложение</p>
                     </a>
-                    <h2>Проект <span lang="en">Boxes</span></h2>
-                    <p>Приложение</p>
                     <p class="popup-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                         incididunt ut
                         labore et dolore magna aliqua.
@@ -110,11 +117,11 @@
                 </li>
 
                 <li class="item">
-                    <a href="/">
-                        <img src="./images/computer.jpg" alt="Компьютер" width="370" height="294" />
+                    <a class="item-card" href="/">
+                        <img src="./images/computer.jpg" alt="Компьютер" width="379" height="294" />
+                        <h2 lang="en">Inspiration has no Borders</h2>
+                        <p>Веб-сайт</p>
                     </a>
-                    <h2 lang="en">Inspiration has no Borders</h2>
-                    <p>Веб-сайт</p>
                     <p class="popup-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                         incididunt ut
                         labore et dolore magna aliqua.
@@ -122,11 +129,11 @@
                 </li>
 
                 <li class="item">
-                    <a href="/">
-                        <img src="./images/journal.jpg" alt="Журнал" width="370" height="294" />
+                    <a class="item-card" href="/">
+                        <img src="./images/journal.jpg" alt="Журнал" width="379" height="294" />
+                        <h2>Издание <span lang="en">Limited Edition</span></h2>
+                        <p>Дизайн</p>
                     </a>
-                    <h2>Издание <span lang="en">Limited Edition</span></h2>
-                    <p>Дизайн</p>
                     <p class="popup-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                         incididunt ut
                         labore et dolore magna aliqua.
@@ -134,23 +141,24 @@
                 </li>
 
                 <li class="item">
-                    <a href="/">
-                        <img src="./images/lab.jpg" alt="Ярлык" width="370" height="294" />
+                    <a class="item-card" href="/">
+                        <img src="./images/lab.jpg" alt="Ярлык" width="379" height="294" />
+                        <h2>Проект <span lang="en">LAB</span></h2>
+                        <p>Маркетинг</p>
                     </a>
-                    <h2>Проект <span lang="en">LAB</span></h2>
-                    <p>Маркетинг</p>
-                    <p class="popup-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    <p class="popup-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor
                         incididunt ut
                         labore et dolore magna aliqua.
                     </p>
                 </li>
 
                 <li class="item">
-                    <a href="/">
-                        <img src="./images/laptop-site.jpg" alt="Лаптоп с вебстраницей" width="370" height="294" />
+                    <a class="item-card" href="/">
+                        <img src="./images/laptop-site.jpg" alt="Лаптоп с вебстраницей" width="379" height="294" />
+                        <h2 lang="en">Growing Business</h2>
+                        <p>Приложение</p>
                     </a>
-                    <h2 lang="en">Growing Business</h2>
-                    <p>Приложение</p>
                     <p class="popup-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                         incididunt ut
                         labore et dolore magna aliqua.
