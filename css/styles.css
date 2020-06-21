@@ -85,19 +85,21 @@ a.logo {
     color: inherit;   
 }
 
-.nav-contacts a {
-    color: var(--grey-textcolor);
-}
-
 .nav-links a:hover,
-.nav-links a:focus,
-.nav-contacts a:hover,
-.nav-contacts a:focus {
+.nav-links a:focus {
     color: var(--accent-color);
 }
 
 .nav-contacts {
     margin-left: auto;
+    
+}
+.nav-contacts a {
+    display: block;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: var(--grey-textcolor);
 }
 
 .nav-links .item-link:not(:last-child) {
@@ -107,12 +109,21 @@ a.logo {
     margin-left: 50px;
 }*/
 
-.nav-contacts .item-link:not(:last-child) {
-    margin-right: 50px;
+.nav-contacts a {
+    margin-right: 30px;
 }
 
+.nav-contacts a:last-child {
+    margin-right: 0px;
+}
 
-
+.nav-contacts a:hover,
+.nav-contacts a:focus,
+.email:hover,
+.phone:hover {
+    color: var(--accent-color);
+    --color1:#2196F3;
+}
 
 /*Герой/Jumbotron*/
 .jumbotron-wrapper {
