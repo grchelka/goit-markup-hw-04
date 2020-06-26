@@ -71,7 +71,7 @@ a.logo {
 .nav-links, 
 .nav-contacts {
     display: flex;
-
+    align-items: center;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
@@ -95,11 +95,19 @@ a.logo {
     
 }
 .nav-contacts a {
-    display: block;
+    display: flex;
     align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
     color: var(--grey-textcolor);
+}
+
+.email {
+    margin-right: 10px;
+}
+
+.phone {
+    margin-right: 10px;
 }
 
 .nav-links .item-link:not(:last-child) {
@@ -248,6 +256,10 @@ background-color: #188ce8;
 }
 
 /* Набор услуг */
+.service-image {
+    display: block;
+}
+
 .service {
     margin-bottom: 94px;
 }
@@ -302,6 +314,9 @@ background-color: #188ce8;
     background-color: var(--secondary-backgroundcolor);
 }
 
+.team-member {
+    display: block;
+}
 .team-title {
     margin-top: 0;
     margin-bottom: 50px;  
@@ -323,7 +338,7 @@ background-color: #188ce8;
     margin-right: 30px;
 }
 
-.team-list .profile-card:nth-child(4n) {
+.team-list .item:nth-child(4n) {
     margin-right: 0px;
 }
 
